@@ -44,4 +44,7 @@ public class Order implements Serializable{
 
     @Enumerated(EnumType.STRING)
     private OrderStatus orderStatus;
+
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date createdAt;
 }
